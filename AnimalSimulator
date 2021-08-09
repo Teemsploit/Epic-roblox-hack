@@ -1,0 +1,95 @@
+while true do
+wait(0.0005)
+local args = {
+    [1] = workspace.Treasures.Treasure1
+}
+
+game:GetService("ReplicatedStorage").TreasureEvent:FireServer(unpack(args))
+
+wait(0.0005)
+local args = {
+    [1] = workspace.Treasures.Treasure2
+}
+
+game:GetService("ReplicatedStorage").TreasureEvent:FireServer(unpack(args))
+
+wait(0.0005)
+local args = {
+    [1] = workspace.Treasures.Treasure3
+}
+
+game:GetService("ReplicatedStorage").TreasureEvent:FireServer(unpack(args))
+wait(0.0005)
+local args = {
+    [1] = workspace.Treasures.Treasure4
+}
+
+game:GetService("ReplicatedStorage").TreasureEvent:FireServer(unpack(args))
+wait(0.0005)
+local args = {
+    [1] = workspace.Treasures.Treasure5
+}
+
+game:GetService("ReplicatedStorage").TreasureEvent:FireServer(unpack(args))
+wait(0.0005)
+local args = {
+    [1] = workspace.Treasures.Treasure6
+}
+
+game:GetService("ReplicatedStorage").TreasureEvent:FireServer(unpack(args))
+wait(0.0005)
+local args = {
+    [1] = workspace.Treasures.Treasure7
+}
+
+game:GetService("ReplicatedStorage").TreasureEvent:FireServer(unpack(args))
+wait(0.0005)
+local args = {
+    [1] = workspace.Treasures.Treasure8
+}
+
+game:GetService("ReplicatedStorage").TreasureEvent:FireServer(unpack(args))
+wait(0.0005)
+local args = {
+    [1] = workspace.Treasures.Treasure9
+}
+
+game:GetService("ReplicatedStorage").TreasureEvent:FireServer(unpack(args))
+wait(0.0005)
+local args = {
+    [1] = workspace.Treasures.Treasure10
+}
+
+game:GetService("ReplicatedStorage").TreasureEvent:FireServer(unpack(args))
+wait(0.0005)
+local args = {
+    [1] = workspace.Treasures.Treasure11
+}
+
+game:GetService("ReplicatedStorage").TreasureEvent:FireServer(unpack(args))
+wait(0.0005)
+local args = {
+    [1] = workspace.Treasures.Treasure12
+}
+
+game:GetService("ReplicatedStorage").TreasureEvent:FireServer(unpack(args))
+wait(0.0005)
+local args = {
+    [1] = workspace.Treasures.Treasure13
+}
+
+game:GetService("ReplicatedStorage").TreasureEvent:FireServer(unpack(args))
+wait(0.0005)
+local args = {
+    [1] = workspace.Treasures.Treasure14
+}
+
+game:GetService("ReplicatedStorage").TreasureEvent:FireServer(unpack(args))
+wait(0.0005)
+local args = {
+    [1] = workspace.Treasures.Treasure15
+}
+
+game:GetService("ReplicatedStorage").TreasureEvent:FireServer(unpack(args))
+print("done")
+end
