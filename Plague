@@ -1,4 +1,4 @@
-
+-- thanks to this person for help on the script https://forum.robloxscripts.com/member.php?action=profile&uid=3497
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
@@ -32,7 +32,6 @@ TextButton.TextWrapped = true
 
 local function XWHNV_fake_script() 
 	local script = Instance.new('LocalScript', TextButton)
--- thanks to this person for help on the script https://forum.robloxscripts.com/member.php?action=profile&uid=3497
 	script.Parent.MouseButton1Click:Connect(function()
 		Players = game:GetService("Players")
 		for i, player in pairs(Players:GetPlayers()) do
