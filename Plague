@@ -1,0 +1,45 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.0917431191, -100, 1.09177589, -100)
+Frame.Size = UDim2.new(0, 127, 0, 23)
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0, 0, -3.0869565, 0)
+TextButton.Size = UDim2.new(1, 0, 3.0869565, 25)
+TextButton.Style = Enum.ButtonStyle.RobloxButtonDefault
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Infect all"
+TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+
+local function XAQWRFY_fake_script() 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		Players = game:GetService("Players")
+		for i, player in pairs(Players:GetPlayers()) do
+			local args = {
+				[1] = {
+					[1] = game:GetService("Players").LocalPlayer.Character,
+					[2] = player.Character
+				}
+			}
+			workspace.Events.DiseaseAdd:FireServer(unpack(args))
+		end
+	end)
+	
+end
+coroutine.wrap(XAQWRFY_fake_script)()
