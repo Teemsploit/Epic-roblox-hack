@@ -1,0 +1,117 @@
+
+
+local TRPTEEM = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local iNFECT = Instance.new("TextButton")
+local FreeR = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Inf = Instance.new("TextButton")
+
+
+
+TRPTEEM.Name = "TRPTEEM"
+TRPTEEM.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+TRPTEEM.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+TRPTEEM.ResetOnSpawn = false
+
+Frame.Parent = TRPTEEM
+Frame.Position = UDim2.new(0, -5, 0, 671)
+Frame.Size = UDim2.new(0, 160, 0, 160)
+Frame.Style = Enum.FrameStyle.RobloxRound
+
+iNFECT.Name = "iNFECT"
+iNFECT.Parent = Frame
+iNFECT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+iNFECT.NextSelectionUp = ScrollingFrame
+iNFECT.Position = UDim2.new(0.00732102245, 0, 0.0475292243, 0)
+iNFECT.Size = UDim2.new(0, 141, 0, 40)
+iNFECT.Style = Enum.ButtonStyle.RobloxRoundButton
+iNFECT.Font = Enum.Font.SourceSans
+iNFECT.Text = "Infect all"
+iNFECT.TextColor3 = Color3.fromRGB(255, 255, 255)
+iNFECT.TextSize = 14.000
+
+FreeR.Name = "FreeR"
+FreeR.Parent = Frame
+FreeR.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FreeR.NextSelectionUp = ScrollingFrame
+FreeR.Position = UDim2.new(0.010967683, 0, 0.357151419, 0)
+FreeR.Size = UDim2.new(0, 140, 0, 39)
+FreeR.Style = Enum.ButtonStyle.RobloxRoundButton
+FreeR.Font = Enum.Font.SourceSans
+FreeR.Text = "Free Radio"
+FreeR.TextColor3 = Color3.fromRGB(255, 255, 255)
+FreeR.TextSize = 14.000
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.254228532, 0, 0.934333444, 0)
+TextLabel.Size = UDim2.new(0, 69, 0, 16)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Made by Teemsploit"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.317898273, 0, -0.0680023283, 0)
+TextLabel_2.Size = UDim2.new(0, 52, 0, 16)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "The Roblox Plague Fucker"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+
+Inf.Name = "Inf"
+Inf.Parent = Frame
+Inf.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Inf.NextSelectionUp = ScrollingFrame
+Inf.Position = UDim2.new(0.00471768295, 0, 0.650901437, 0)
+Inf.Size = UDim2.new(0, 140, 0, 39)
+Inf.Style = Enum.ButtonStyle.RobloxRoundButton
+Inf.Font = Enum.Font.SourceSans
+Inf.Text = "Infinite Credits"
+Inf.TextColor3 = Color3.fromRGB(255, 255, 255)
+Inf.TextSize = 14.000
+
+
+local function DYOALND_fake_script() -- iNFECT.LocalScript 
+	local script = Instance.new('LocalScript', iNFECT)
+
+	iNFECT.MouseButton1Click:Connect(function()
+		Players = game:GetService("Players")
+		for i, player in pairs(Players:GetPlayers()) do
+			local args = {
+				[1] = {
+					[1] = game:GetService("Players").LocalPlayer.Character,
+					[2] = player.Character
+				}
+			}
+			workspace.Events.DiseaseAdd:FireServer(unpack(args))
+		end
+	
+	end)
+end
+coroutine.wrap(DYOALND_fake_script)()
+local function HXAOL_fake_script() -- FreeR.LocalScript 
+	local script = Instance.new('LocalScript', FreeR)
+
+	FreeR.MouseButton1Click:Connect(function()
+		game:GetService("Players").LocalPlayer.PlayerGui.TRIGUI.Radio.Get:remove()
+		end
+)end
+coroutine.wrap(HXAOL_fake_script)()
+local function MGOJIS_fake_script() -- Inf.LocalScript 
+	local script = Instance.new('LocalScript', Inf)
+
+	Inf.MouseButton1Click:Connect(function()
+		while true do
+			game.Players.LocalPlayer.Credits.Value = 9999999
+			wait(5)
+			end
+		end
+)end
+coroutine.wrap(MGOJIS_fake_script)()
+syn.protect_gui(TRPTEEM)
