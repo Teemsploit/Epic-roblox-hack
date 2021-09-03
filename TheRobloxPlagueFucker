@@ -1,7 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
 
 local L_1_ = Instance.new("ScreenGui")
 local L_2_ = Instance.new("Frame")
@@ -14,7 +10,6 @@ local L_8_ = Instance.new("TextButton")
 local L_9_ = Instance.new("TextButton")
 local L_10_ = Instance.new("TextButton")
 
---Properties:
 
 L_1_.Name = "TRPTEEM"
 L_1_.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
