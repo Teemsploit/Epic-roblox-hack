@@ -113,7 +113,7 @@ local function L_11_func() -- remove.LocalScript
 	local L_18_ = Instance.new('LocalScript', L_5_)
 
 	L_5_.MouseButton1Click:Connect(function()
-		game:GetService("Players").TeemIsCute.PlayerGui.TRPTEEM:Remove()
+		game:GetService("Players").LocalPlayer.PlayerGui.TRPTEEM:Remove()
 
 	end)
 end
