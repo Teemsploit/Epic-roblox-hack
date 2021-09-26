@@ -1,0 +1,39 @@
+-- removing hats mesh
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v:IsA("Accessory") and v.Handle:FindFirstChild("SpecialMesh") then
+        gg = v.Handle:FindFirstChild("SpecialMesh")
+        gg:Destroy()
+    end
+end
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v:IsA("Accessory") and v.Handle:FindFirstChild("Mesh") then
+        gg = v.Handle:FindFirstChild("Mesh")
+        gg:Destroy()
+    end
+end
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v:IsA("Accessory") then
+        gg = v
+        gg.Parent = game.Workspace
+    end
+end
+wait()
+-- limb remove
+game.Players.LocalPlayer.Character["Right Arm"]:Destroy()
+game.Players.LocalPlayer.Character["Left Arm"]:Destroy()
+game.Players.LocalPlayer.Character["Right Leg"]:Destroy()
+game.Players.LocalPlayer.Character["Left Leg"]:Destroy()
+teemwashere1 = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
+-- walkspeed and jumphight
+teemwashere1.WalkSpeed = 0
+teemwashere1.JumpPower = 0
+wait()
+local Notification = loadstring(game:HttpGet("https://api.irisapp.ca/Scripts/IrisBetterNotifications.lua"))()
+
+spawn(function()
+  Notification.Notify("FE rock", "Made by Teemsploit   http://youtube.com/teemsploit ", "rbxassetid://4914902889");
+end)
+wait(3)
+spawn(function()
+  Notification.Notify("FE rock", "Thanks to Atomic Scripter for a tutorial they made", "rbxassetid://4914902889");
+end)
