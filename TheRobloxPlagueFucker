@@ -1,188 +1,150 @@
 
-local L_1_ = Instance.new("ScreenGui")
-local L_2_ = Instance.new("Frame")
-local L_3_ = Instance.new("TextLabel")
-local L_4_ = Instance.new("TextLabel")
-local L_5_ = Instance.new("TextButton")
-local L_6_ = Instance.new("TextButton")
-local L_7_ = Instance.new("TextButton")
-local L_8_ = Instance.new("TextButton")
-local L_9_ = Instance.new("TextButton")
-local L_10_ = Instance.new("TextButton")
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Credits = Instance.new("TextLabel")
+local RemoveGUI = Instance.new("TextButton")
+local InfectAllBtn = Instance.new("TextButton")
+local RemoveAdsBtn = Instance.new("TextButton")
+local VIPTPBtn = Instance.new("TextButton")
+local InfCreditsBtn = Instance.new("TextButton")
+local MusicBtn = Instance.new("TextButton")
 
 
-L_1_.Name = "TRPTEEM"
-L_1_.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-L_1_.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-L_1_.ResetOnSpawn = false
+ScreenGui.Name = "TRPTEEM"
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ResetOnSpawn = false
 
-L_2_.Parent = L_1_
-L_2_.BorderSizePixel = 0
-L_2_.Position = UDim2.new(0, 0, 0, 674)
-L_2_.Size = UDim2.new(0, 160, 0, 165)
+Frame.Parent = ScreenGui
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0, 674)
+Frame.Size = UDim2.new(0, 160, 0, 165)
 
-L_3_.Parent = L_2_
-L_3_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-L_3_.BackgroundTransparency = 1.000
-L_3_.Position = UDim2.new(0.311648279, 0, -0.00497202575, 0)
-L_3_.Size = UDim2.new(0, 52, 0, 16)
-L_3_.Font = Enum.Font.SourceSans
-L_3_.Text = "The Roblox Plague Fucker"
-L_3_.TextColor3 = Color3.fromRGB(255, 255, 255)
-L_3_.TextSize = 14.000
+Frame.Active = true
+Frame.Draggable = true
 
-L_4_.Parent = L_2_
-L_4_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-L_4_.BackgroundTransparency = 1.000
-L_4_.Position = UDim2.new(0.260478526, 0, 0.897969782, 0)
-L_4_.Size = UDim2.new(0, 69, 0, 16)
-L_4_.Font = Enum.Font.SourceSans
-L_4_.Text = "Made by Teemsploit ik its a shit gui"
-L_4_.TextColor3 = Color3.fromRGB(255, 255, 255)
-L_4_.TextSize = 10.000
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.311648279, 0, -0.00497202575, 0)
+Title.Size = UDim2.new(0, 52, 0, 16)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "The Roblox Plague Fucker"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 14.000
 
-L_5_.Name = "remove"
-L_5_.Parent = L_2_
-L_5_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-L_5_.Position = UDim2.new(-0.0250000004, 0, 0.774435163, 0)
-L_5_.Size = UDim2.new(0, 164, 0, 20)
-L_5_.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
-L_5_.Font = Enum.Font.SourceSans
-L_5_.Text = "REMOVE GUI"
-L_5_.TextColor3 = Color3.fromRGB(255, 0, 0)
-L_5_.TextSize = 14.000
+Credits.Parent = Frame
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.260478526, 0, 0.897969782, 0)
+Credits.Size = UDim2.new(0, 69, 0, 16)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Made by Teemsploit ik its a shit gui"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 10.000
 
-L_6_.Name = "iNFECT"
-L_6_.Parent = L_2_
-L_6_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-L_6_.Position = UDim2.new(0.00832929648, 0, 0.249202847, 0)
-L_6_.Size = UDim2.new(0, 158, 0, 22)
-L_6_.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
-L_6_.Font = Enum.Font.SourceSans
-L_6_.Text = "Infect all"
-L_6_.TextColor3 = Color3.fromRGB(255, 255, 255)
-L_6_.TextSize = 14.000
+RemoveGUI.Name = "remove"
+RemoveGUI.Parent = Frame
+RemoveGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RemoveGUI.Position = UDim2.new(-0.0250000004, 0, 0.774435163, 0)
+RemoveGUI.Size = UDim2.new(0, 164, 0, 20)
+RemoveGUI.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+RemoveGUI.Font = Enum.Font.SourceSans
+RemoveGUI.Text = "REMOVE GUI"
+RemoveGUI.TextColor3 = Color3.fromRGB(255, 0, 0)
+RemoveGUI.TextSize = 14.000
 
-L_7_.Name = "ads"
-L_7_.Parent = L_2_
-L_7_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-L_7_.Position = UDim2.new(0.00832929648, 0, 0.386934787, 0)
-L_7_.Size = UDim2.new(0, 157, 0, 20)
-L_7_.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
-L_7_.Font = Enum.Font.SourceSans
-L_7_.Text = "Delete ads"
-L_7_.TextColor3 = Color3.fromRGB(255, 255, 255)
-L_7_.TextSize = 14.000
+InfectAllBtn.Name = "iNFECT"
+InfectAllBtn.Parent = Frame
+InfectAllBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfectAllBtn.Position = UDim2.new(0.00832929648, 0, 0.249202847, 0)
+InfectAllBtn.Size = UDim2.new(0, 158, 0, 22)
+InfectAllBtn.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+InfectAllBtn.Font = Enum.Font.SourceSans
+InfectAllBtn.Text = "Infect all"
+InfectAllBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfectAllBtn.TextSize = 14.000
 
-L_8_.Name = "TPvip"
-L_8_.Parent = L_2_
-L_8_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-L_8_.Position = UDim2.new(0, 0, 0.133619279, 0)
-L_8_.Size = UDim2.new(0, 159, 0, 19)
-L_8_.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
-L_8_.Font = Enum.Font.SourceSans
-L_8_.Text = "VIP tp"
-L_8_.TextColor3 = Color3.fromRGB(255, 255, 255)
-L_8_.TextSize = 14.000
+RemoveAdsBtn.Name = "ads"
+RemoveAdsBtn.Parent = Frame
+RemoveAdsBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RemoveAdsBtn.Position = UDim2.new(0.00832929648, 0, 0.386934787, 0)
+RemoveAdsBtn.Size = UDim2.new(0, 157, 0, 20)
+RemoveAdsBtn.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+RemoveAdsBtn.Font = Enum.Font.SourceSans
+RemoveAdsBtn.Text = "Delete ads"
+RemoveAdsBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+RemoveAdsBtn.TextSize = 14.000
 
-L_9_.Name = "Inf"
-L_9_.Parent = L_2_
-L_9_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-L_9_.Position = UDim2.new(-0.000444412231, 0, 0.510552406, 0)
-L_9_.Size = UDim2.new(0, 159, 0, 21)
-L_9_.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
-L_9_.Font = Enum.Font.SourceSans
-L_9_.Text = "Infinite Credits"
-L_9_.TextColor3 = Color3.fromRGB(255, 255, 255)
-L_9_.TextSize = 14.000
+VIPTPBtn.Name = "TPvip"
+VIPTPBtn.Parent = Frame
+VIPTPBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VIPTPBtn.Position = UDim2.new(0, 0, 0.133619279, 0)
+VIPTPBtn.Size = UDim2.new(0, 159, 0, 19)
+VIPTPBtn.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+VIPTPBtn.Font = Enum.Font.SourceSans
+VIPTPBtn.Text = "VIP tp"
+VIPTPBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+VIPTPBtn.TextSize = 14.000
 
-L_10_.Name = "play"
-L_10_.Parent = L_2_
-L_10_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-L_10_.Position = UDim2.new(0.00260543823, 0, 0.642187476, 0)
-L_10_.Size = UDim2.new(0, 157, 0, 21)
-L_10_.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
-L_10_.Font = Enum.Font.SourceSans
-L_10_.Text = "Play battle music"
-L_10_.TextColor3 = Color3.fromRGB(255, 255, 255)
-L_10_.TextSize = 14.000
+InfCreditsBtn.Name = "Inf"
+InfCreditsBtn.Parent = Frame
+InfCreditsBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfCreditsBtn.Position = UDim2.new(-0.000444412231, 0, 0.510552406, 0)
+InfCreditsBtn.Size = UDim2.new(0, 159, 0, 21)
+InfCreditsBtn.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+InfCreditsBtn.Font = Enum.Font.SourceSans
+InfCreditsBtn.Text = "Infinite Credits"
+InfCreditsBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfCreditsBtn.TextSize = 14.000
 
--- Scripts:
+MusicBtn.Name = "play"
+MusicBtn.Parent = Frame
+MusicBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MusicBtn.Position = UDim2.new(0.00260543823, 0, 0.642187476, 0)
+MusicBtn.Size = UDim2.new(0, 157, 0, 21)
+MusicBtn.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+MusicBtn.Font = Enum.Font.SourceSans
+MusicBtn.Text = "Play battle music"
+MusicBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+MusicBtn.TextSize = 14.000
 
-local function L_11_func() -- remove.LocalScript 
-	local L_18_ = Instance.new('LocalScript', L_5_)
+RemoveGUI.MouseButton1Click:Connect(function()
+	ScreenGui:Remove()
+end)
 
-	L_5_.MouseButton1Click:Connect(function()
-		game:GetService("Players").LocalPlayer.PlayerGui.TRPTEEM:Remove()
-
-	end)
-end
-coroutine.wrap(L_11_func)()
-local function L_12_func() -- iNFECT.LocalScript 
-	local L_19_ = Instance.new('LocalScript', L_6_)
-
-	L_6_.MouseButton1Click:Connect(function()
-		Players = game:GetService("Players")
-		for L_20_forvar1, L_21_forvar2 in pairs(Players:GetPlayers()) do
-			local L_22_ = {
-				[1] = {
-					[1] = game:GetService("Players").LocalPlayer.Character,
-					[2] = L_21_forvar2.Character
-				}
+InfectAllBtn.MouseButton1Click:Connect(function()
+	Players = game:GetService("Players")
+	for i, plr in pairs(Players:GetPlayers()) do
+		local aTable = {
+			[1] = {
+				[1] = game:GetService("Players").LocalPlayer.Character,
+				[2] = plr.Character
 			}
-			workspace.Events.DiseaseAdd:FireServer(unpack(L_22_))
-		end
+		}
+		workspace.Events.DiseaseAdd:FireServer(unpack(aTable))
+	end
+end)
 
-	end)
-end
-coroutine.wrap(L_12_func)()
-local function L_13_func() -- ads.LocalScript 
-	local L_23_ = Instance.new('LocalScript', L_7_)
+RemoveAdsBtn.MouseButton1Click:Connect(function()
+	game:GetService("ReplicatedStorage").Ads:Remove()
+end)
 
-	L_7_.MouseButton1Click:Connect(function()
-		game:GetService("ReplicatedStorage").Ads:Remove()
+VIPTPBtn.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(288, 22, 396)
+end)
 
-	end)
-end
-coroutine.wrap(L_13_func)()
-local function L_14_func() -- TPvip.LocalScript 
-	local L_24_ = Instance.new('LocalScript', L_8_)
+InfCreditsBtn.MouseButton1Click:Connect(function()
+	while true do
+		game.Players.LocalPlayer.Credits.Value = 9999999
+		wait(5)
+	end
+end)
 
-	L_8_.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(288, 22, 396)
-
-	end)
-end
-coroutine.wrap(L_14_func)()
-local function L_15_func() -- Inf.LocalScript 
-	local L_25_ = Instance.new('LocalScript', L_9_)
-
-	L_9_.MouseButton1Click:Connect(function()
-		while true do
-			game.Players.LocalPlayer.Credits.Value = 9999999
-			wait(5)
+MusicBtn.MouseButton1Click:Connect(function()
+	for i, sound in pairs(game.Workspace:GetDescendants()) do
+		if sound.ClassName == "Sound" then
+			sound:Play()
 		end
 	end
-	)
-end
-coroutine.wrap(L_15_func)()
-local function L_16_func() -- play.LocalScript 
-	local L_26_ = Instance.new('LocalScript', L_10_)
-
-	L_10_.MouseButton1Click:Connect(function()
-		for L_27_forvar1, L_28_forvar2 in pairs(game.Workspace:GetDescendants()) do
-			if L_28_forvar2:IsA("Sound") then
-				L_28_forvar2:Play()
-			end
-		end
-	end
-	)
-end
-coroutine.wrap(L_16_func)()
-local function L_17_func() -- Frame.Dragable 
-	local L_29_ = Instance.new('LocalScript', L_2_)
-
-	L_29_.Parent.Active = true
-	L_29_.Parent.Draggable = true
-end
-coroutine.wrap(L_17_func)()
+end)
