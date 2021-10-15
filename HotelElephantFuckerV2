@@ -77,12 +77,12 @@ game:GetService("ReplicatedStorage").ChangeTeam:InvokeServer(unpack(args))
 
 end)
 local Section = Tab:NewSection("local player")
-Section:NewButton("Give yourself 1000 cash", "did you read the button name?", function()   
+Section:NewButton("Give yourself 10000 cash", "did you read the button name?", function()   
 local args ={
     [1] = false,
     [2] = 10000,
     [3] = "Cash",
-    [4] = game:GetService("Players").localplayer
+    [4] = game:GetService("Players").LocalPlayer
 }
 
 game:GetService("ReplicatedStorage").MoneyRequest:FireServer(unpack(args))
