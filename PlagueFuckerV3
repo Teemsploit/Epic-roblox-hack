@@ -1,0 +1,84 @@
+
+print("████████╗███████╗███████╗███╗░░░███╗") 
+print("╚══██╔══╝██╔════╝██╔════╝████╗░████║") 
+print("░░░██║░░░█████╗░░█████╗░░██╔████╔██║") 
+print("░░░██║░░░██╔══╝░░██╔══╝░░██║╚██╔╝██║") 
+print("░░░██║░░░███████╗███████╗██║░╚═╝░██║") 
+print("░░░╚═╝░░░╚══════╝╚══════╝╚═╝░░░░░╚═╝")
+wait()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+
+local Window = Library.CreateLib("Roblox Plague Fucker V3 | made by teemsploit", "GrapeTheme")
+local Tab = Window:NewTab("Game")
+local Section = Tab:NewSection("Game Breaking")
+Section:NewButton("Infect All", "Infects everyone", function()    
+    Players = game:GetService("Players")
+	for i, plr in pairs(Players:GetPlayers()) do
+		local aTable = {
+			[1] = {
+				[1] = game:GetService("Players").LocalPlayer.Character,
+				[2] = plr.Character
+			}
+		}
+		workspace.Events.DiseaseAdd:FireServer(unpack(aTable))
+	end
+end)
+Section:NewButton("Infect yourself", "Infects yourslef", function()    
+local args = {
+    [1] = {
+        [1] = game:GetService("Players").LocalPlayer.Character,
+        [2] = game:GetService("Players").LocalPlayer.Character
+    }
+}
+
+workspace.Events.DiseaseAdd:FireServer(unpack(args))
+
+end)
+Section:NewButton("Remove Plague Puddles (client side)", "removes plague puddles on your client", function()    
+  game:GetService("Workspace").Ignore.Diseases:destroy()
+end)
+Section:NewButton("Infinite Credits", "Gives infinite credits", function()    
+    while wait(5) do
+		game.Players.LocalPlayer.Credits.Value = 9999999
+	end
+end)
+local Section = Tab:NewSection("Trolling")
+Section:NewToggle("Play L4D music", "Plays L4D music lol", function(state)    
+    if state then        
+    	for i, sound in pairs(game.Workspace:GetDescendants()) do
+		if sound.ClassName == "Sound" then
+			sound:Play()
+		end
+	end
+        else       
+            	for i, sound in pairs(game.Workspace:GetDescendants()) do
+		if sound.ClassName == "Sound" then
+			sound:Stop()
+		end
+	end  
+            end
+end)
+Section:NewButton("Play creepy sounds (5s)", "Plays Creepy sounds", function()    
+    game.Workspace.StartRound:Play()
+end)
+ local Section = Tab:NewSection("Teleports")       
+Section:NewButton("TP inside vip room", "tps you inside vip room", function()    
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(288, 22, 396)
+end)
+
+Section:NewButton("TP to lobby", "tps you to lobby", function()    
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(322, 28, 414)
+end)
+local function callback(Text)
+end
+ 
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Plague fucker v3 loaded";
+    Text = "made by teemsploit";
+    Duration = "5";
+    Callback = NotificationBindable;
+})
