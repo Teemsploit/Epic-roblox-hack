@@ -125,7 +125,7 @@ Credits:NewLabel("UI Lib by xHeptc")
 NotificationBindable.OnInvoke = callback
  
 game.StarterGui:SetCore("SendNotification", {
-    Title = "Plague fucker v4.1 loaded";
+    Title = "Plague fucker v4.2 loaded";
     Text = "made by teemsploit";
     Duration = "5";
     Callback = NotificationBindable;
