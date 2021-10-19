@@ -85,10 +85,42 @@ end)
 Movement:NewSlider("JumpPower", "Jump higher", 500, 16, function(s)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
-
+Movement:NewButton("infinite jump", "press r to toggle", function()
+-- by isaraw8912
+-- Press [R] to turn off and to turn on
+-- got permission to use
+_G.infinjump = true
+ 
+local Player = game:GetService("Players").LocalPlayer
+local Mouse = Player:GetMouse()
+Mouse.KeyDown:connect(function(k)
+if _G.infinjump then
+if k:byte() == 32 then
+Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+Humanoid:ChangeState("Jumping")
+wait(0.1)
+Humanoid:ChangeState("Seated")
+end
+end
+end)
+ 
+local Player = game:GetService("Players").LocalPlayer
+local Mouse = Player:GetMouse()
+Mouse.KeyDown:connect(function(k)
+k = k:lower()
+if k == "r" then
+if _G.infinjump == true then
+_G.infinjump = false
+else
+_G.infinjump = true
+end
+end
+end)
+end)
 local Credits = CreditsTab:NewSection("Credits")
 Credits:NewLabel("Scripted by Teem")
 Credits:NewLabel("Scripting Help by vil")
+Credits:NewLabel("infinite jump by isaraw8912")
 Credits:NewLabel("UI Lib by xHeptc")
 NotificationBindable.OnInvoke = callback
  
