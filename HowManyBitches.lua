@@ -22,9 +22,9 @@ local Zero = 0
 local function Ran(a, b)
     Zero = Zero + 1
     if a ~= nil and b ~= nil then
-        return math.floor(a + math.random(math.randomseed(os.time() + Zero)) * 999999 % b)
+        return math.floor(a + math.random(math.randomseed(os.clock() + Zero)) * 999999 % b)
     else
-        return math.floor(math.random(math.randomseed(os.time() + Zero)) * 100)
+        return math.floor(math.random(math.randomseed(os.clock() + Zero)) * 100)
     end
 end
 local DisplayAmount = Ran()
