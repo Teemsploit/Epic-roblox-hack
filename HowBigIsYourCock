@@ -1,0 +1,2 @@
+local DisplayAmount = math.random(1, 600)
+messagebox("Your cock is " .. DisplayAmount / 100 .. " inches long.", "How long is your cock?", 0)
